@@ -5,13 +5,13 @@ console.log(amigo);
 
 function agregarAmigo(){
     let inputAmigo = document.getElementById("amigo");
-    let amigo = inputAmigo.value;
+    let nombreAmigo = inputAmigo.value;
    
     //console.log(amigo)
 
-    if (!amigo){
+    if (!nombreAmigo){
         alert("Debes ingresar un nombre");
         return;
     }
-    amigo.pu
+    amigo.push(nombreAmigo)
 }
