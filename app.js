@@ -13,6 +13,7 @@ function agregarAmigo(){
     inputAmigo.value = "";
     inputAmigo.focus();
     renderizarAmigos();
+
 }
 
 function renderizarAmigos(){
@@ -31,4 +32,13 @@ function sortearAmigo(){
         alert("No hay amigos para sortear");
         return;
     }
+    let amigoSorteado = amigo[Math.floor(Math.random() * amigo.length)];
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = `El amigo sorteado es: ${amigoSorteado}`;
+    console.log(amigoSorteado);
+
+    let limpiarLista = document.getElementById("listaAmigos");
+    limpiarLista.innerHTML = "";
+    amigo = [];
+    console.log(amigo);
 }
