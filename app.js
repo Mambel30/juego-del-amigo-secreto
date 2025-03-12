@@ -42,3 +42,4 @@ function sortearAmigo(){
     amigo = [];
     console.log(amigo);
 }
+//Actualizo el codigo 
