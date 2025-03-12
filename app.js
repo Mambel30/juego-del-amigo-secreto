@@ -26,3 +26,9 @@ function renderizarAmigos(){
 
     }
 }
+function sortearAmigo(){
+    if (amigo.length === 0) {
+        alert("No hay amigos para sortear");
+        return;
+    }
+}
